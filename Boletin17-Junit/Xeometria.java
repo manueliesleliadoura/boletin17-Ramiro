@@ -1,5 +1,7 @@
 package Boletin17;
 
+import java.lang.Math;
+
 public class Xeometría {
 
 	public int perimetroCadrado(int lado) {
@@ -24,6 +26,6 @@ public class Xeometría {
 
 		hipotenusaC = ((catetoA * catetoA) + (catetoB * catetoB));
 
-		return hipotenusaC;
+		return hipotenusaC = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
 	}
 }
