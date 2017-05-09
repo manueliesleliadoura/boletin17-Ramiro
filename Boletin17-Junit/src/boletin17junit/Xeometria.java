@@ -1,8 +1,8 @@
-package Boletin17;
+package boletin17junit;
 
 import java.lang.Math;
 
-public class Xeometría {
+public class Xeometria {
 
 	public int perimetroCadrado(int lado) {
 		int perimetro;
@@ -24,8 +24,17 @@ public class Xeometría {
 	public double teoremaPitagoras(int catetoA, int catetoB) {
 		double hipotenusaC;
 
-		hipotenusaC = ((catetoA * catetoA) + (catetoB * catetoB));
+		hipotenusaC = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
 
-		return hipotenusaC = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
+		return hipotenusaC;
+	}
+
+	public double teoremaPitagoras(double catetoA, double hipotenusaC) {
+		double catetoB;
+
+		catetoB = Math.sqrt((hipotenusaC * hipotenusaC) - (catetoA * catetoA));
+
+		return catetoB;
+
 	}
 }
