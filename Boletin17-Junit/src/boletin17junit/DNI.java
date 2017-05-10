@@ -2,14 +2,19 @@ package boletin17junit;
 
 public class DNI {
 
-	/* Genrar número aleatorio del DNI */
-	int numeroAleatorio = (int) (Math.random() * 25 + 1);
+	/* Generar número aleatorio del DNI */
+	int numeroAleatorio = (int) (Math.random() * 99999999 + 1);
 
 	/* Cálculo de letra del DNI */
-	char calculaLetra(int dni) {
+	char calculaLetra(String dni) {
 		String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
-		int modulo = dni % 23;
-		char letra = juegoCaracteres.charAt(modulo);
-		return letra;
+
+		if (dni.length() != 8) {
+			return 0;
+		}
+
+		int num = 0;
+
+		return juegoCaracteres.charAt(num % 23);
 	}
 }
