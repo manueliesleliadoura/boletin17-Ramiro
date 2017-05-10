@@ -22,19 +22,17 @@ public class Xeometria {
 	}
 
 	public double teoremaPitagoras(int catetoA, int catetoB) {
-		double hipotenusaC;
 
-		hipotenusaC = Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
-
-		return hipotenusaC;
+		/* Me ahorro poner la variable hipotenusa */
+		return Math.sqrt((catetoA * catetoA) + (catetoB * catetoB));
 	}
 
 	public double teoremaPitagoras(double catetoA, double hipotenusaC) {
-		double catetoB;
 
-		catetoB = Math.sqrt((hipotenusaC * hipotenusaC) - (catetoA * catetoA));
-
-		return catetoB;
+		/*
+		 * Lo mismo que arriba, pero en este caso me ahorro la variable cateto
+		 */
+		return Math.sqrt((hipotenusaC * hipotenusaC) - (catetoA * catetoA));
 
 	}
 }
