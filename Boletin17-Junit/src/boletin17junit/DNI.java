@@ -17,4 +17,18 @@ public class DNI {
 
 		return juegoCaracteres.charAt(num % 23);
 	}
+
+	boolean eValido(String numeroLetra) {
+		boolean numeroLetra;
+		
+		if (numeroletra() == "TRWAGMYFPDXBNJZSQVHLCKE") {
+			return true;
+			
+			else 
+				return false;
+			
+			
+		}
+	}
+
 }
