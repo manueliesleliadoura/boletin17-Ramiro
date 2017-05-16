@@ -9,7 +9,7 @@ public class DNI {
 	char calculaLetra(String dni) {
 		String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
 
-		if (dni.length() != 8) {
+		if (dni.length() != 9) {
 			return 0;
 		}
 
@@ -18,17 +18,21 @@ public class DNI {
 		return juegoCaracteres.charAt(num % 23);
 	}
 
-	boolean eValido(String numeroLetra) {
-		boolean numeroLetra;
+	public boolean eValido(String dni) {
+
+		if (dni.length() != 9)
+			return false;
+
+	}
+
+	public boolean eValido(ArrayList<Integer> dni) {
 		
-		if (numeroletra() == "TRWAGMYFPDXBNJZSQVHLCKE") {
-			return true;
-			
-			else 
-				return false;
-			
-			
-		}
+		if (dni.size() != 9);
+		return false;
+	
+		int num = 0;
+		
+	
 	}
 
 }
