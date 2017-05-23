@@ -9,8 +9,8 @@ public class DNI {
 	char calculaLetra(String dni) {
 		String juegoCaracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
 
-		if (dni.length() != 9) {
-			return 0;
+		if (dni.length() != 8) {
+			return -1;
 		}
 
 		int num = 0;
