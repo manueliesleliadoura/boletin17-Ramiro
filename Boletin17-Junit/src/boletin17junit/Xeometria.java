@@ -36,7 +36,7 @@ public class Xeometria {
 		if (lado <= 0)
 			return -1;
 
-		area = (lado * lado);
+		area = ( lado * lado);
 
 		return area;
 
@@ -70,7 +70,7 @@ public class Xeometria {
 	 * @return catetoB
 	 */
 
-	public double teoremaPitagoras(double catetoA, double hipotenusaC) {
+	public double teoremaPitagorashp(double catetoA, double hipotenusaC) {
 
 		// desechar las operaciones que no tienen sentido
 		if (catetoA <= 0 || hipotenusaC <= 0) {

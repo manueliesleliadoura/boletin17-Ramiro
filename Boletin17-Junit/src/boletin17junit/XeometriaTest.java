@@ -16,8 +16,22 @@ public class XeometriaTest {
 
 	@Test
 	public void testareaCadrado() {
-		assertEquals(xeometria.perimetroCadrado(2), 4);
-		assertEquals(xeometria.perimetroCadrado(10), 100);
+		assertEquals(xeometria.areaCadrado(2), 4);
+		assertEquals(xeometria.areaCadrado(10), 100);
+
+	}
+
+	@Test
+	public void testteoremaPitagoras() {
+		equals(xeometria.teoremaPitagoras(1, 1));
+		equals(xeometria.teoremaPitagoras(10, 10));
+
+	}
+
+	@Test
+	public void testteoremaPitagorashp() {
+		equals(xeometria.teoremaPitagorashp(1, 1));
+		equals(xeometria.teoremaPitagorashp(10, 10));
 
 	}
 
