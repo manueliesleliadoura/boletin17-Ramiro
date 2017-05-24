@@ -6,8 +6,17 @@ import org.junit.Test;
 public class DNITest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testeValido() {
+		
+		
+
+	}
+
+	@Test
+	public void testcalculaLetra() {
+		
+		
+
 	}
 
 }

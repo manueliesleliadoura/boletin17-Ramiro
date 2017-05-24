@@ -1,7 +1,11 @@
 package boletin17junit;
 
 public class DNI {
-
+/**
+ * Recibe un numero DNI y comprueba
+ * @param dniletra
+ * @return boolean
+ */
 	boolean eValido(String dniletra) {
 
 		String Caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
@@ -26,7 +30,11 @@ public class DNI {
 		}
 		return false;
 	}
-
+/**
+ * Calcula la letra para el DNI
+ * @param numdni
+ * @return 
+ */
 	/* Cálculo de letra del DNI */
 	int calculaLetra(String numdni) {
 
@@ -49,37 +57,28 @@ public class DNI {
 		return Letra;
 	}
 
-	public boolean eValido(ArrayList<Integer> dni) {
-
-		String Caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
-
-		if (dni.size() != 9)
-			return false;
-
-		int num = 0;
-		for (int i = 0; i < 8; i++) {
-			num += dni.get(i) * Math.pow(10, 7 - i);
-		}
-
-		char validChar = Caracteres[num % 23];
-
-		if (dni.get(8) == validChar || dni.get(8) == Character.toLowerCase(validChar)) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-
-	public int calculaLetra(ArrayList<Integer> numero_dni) {
-		String Caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
-
-		if (numero_dni.size() != 8)
-			return 0;
-
-		int num = 0;
-		for (int i = 0; i < 8; i++) {
-			num += numero_dni.get(i) * Math.pow(10, 7 - i);
-		}
-		return Caracteres[num % 23];
-	}
+	/*
+	 * public boolean eValido(ArrayList<Integer> dni) {
+	 * 
+	 * String Caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
+	 * 
+	 * if (dni.size() != 9) return false;
+	 * 
+	 * int num = 0; for (int i = 0; i < 8; i++) { num += dni.get(i) *
+	 * Math.pow(10, 7 - i); }
+	 * 
+	 * char validChar = Caracteres[num % 23];
+	 * 
+	 * if (dni.get(8) == validChar || dni.get(8) ==
+	 * Character.toLowerCase(validChar)) { return true; } else { return false; }
+	 * }
+	 * 
+	 * public int calculaLetra(ArrayList<Integer> numero_dni) { String
+	 * Caracteres = "TRWAGMYFPDXBNJZSQVHLCKE";
+	 * 
+	 * if (numero_dni.size() != 8) return 0;
+	 * 
+	 * int num = 0; for (int i = 0; i < 8; i++) { num += numero_dni.get(i) *
+	 * Math.pow(10, 7 - i); } return Caracteres[num % 23]; }
+	 */
 }
